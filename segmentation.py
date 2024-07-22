@@ -2,7 +2,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import sent_tokenize, word_tokenize
 import requests
 from collections import Counter
-
+import sys
 
 # Break one long dialog into chunks by topic
 def segment_dialog(dialogue):
@@ -68,9 +68,14 @@ def short_seg(dialogue, num_words):
             curr_seg = ""
     return segments
     
-
+# To Run:
+# py ./segmentation.py transcriptname outputfilename timed numwords(ex 140)
+# or
+# py ./segmentation.py transcriptname outputfilename topic
 def main():
-    data = "Transcript2/SV_Transcript.txt"
+    data = sys.argv[1]
+    file = sys.argv[2]
+    mode = sys.argv[3]
 
     # Get the dialogue broken into a list by sentence
     text = ""
@@ -78,31 +83,16 @@ def main():
         text += str(line)
     tokenized_text = sent_tokenize(text)
 
-    num_1min = 140
-    num_10sec = 24
-    
     # Segment the dialogue
-    tensec_segments = short_seg(tokenized_text, num_10sec)
-    onemin_segments = short_seg(tokenized_text, num_1min)
-    topic_segments = segment_dialog(tokenized_text)
+    if (mode == "timed"):
+        segments = short_seg(tokenized_text, int(sys.argv[4]))
+    else:
+        segments = segment_dialog(tokenized_text)
 
-    segments_text = open("Transcript2/10sec_segments.txt", "w")
+    # Write the segments to file
+    segments_text = open(file, "w")
     i = 0
-    for segment in tensec_segments:
-        segments_text.write(f"Segment {i}: {segment}\n\n")
-        i += 1
-    segments_text.close()
-
-    segments_text = open("Transcript2/1min_segments.txt", "w")
-    i = 0
-    for segment in onemin_segments:
-        segments_text.write(f"Segment {i}: {segment}\n\n")
-        i += 1
-    segments_text.close()
-
-    segments_text = open("Transcript2/segments.txt", "w")
-    i = 0
-    for segment in topic_segments:
+    for segment in segments:
         segments_text.write(f"Segment {i}: {segment}\n\n")
         i += 1
     segments_text.close()

@@ -3,7 +3,7 @@ import time
 from pydub import AudioSegment
 import azure.cognitiveservices.speech as speechsdk
 
-speech_config = speechsdk.SpeechConfig(subscription="", region="westus")
+speech_config = speechsdk.SpeechConfig(subscription="15e6c0fa2737431885c2cbb1a634a898", region="westus")
 speech_config.speech_recognition_language="en-US"
 audio_config = ""
 speech_recognizer = ""
