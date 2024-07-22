@@ -1,0 +1,75 @@
+Segment0:
+Topic: Unusual Food Combinations 
+Sentence: I don't really want to try the cheeseburger ice cream. 
+
+Segment1:
+Topic: Exotic Foods
+Sentence: Remember the scorpion pizza? That makes me so uncomfortable.
+
+Segment2:
+Topic: Fear of Eating Bugs
+Sentence: I couldn't do Fear Factor just for that reason.
+
+Segment3:
+Topic: Unusual Cheese
+Sentence: Apparently when you eat it, the maggots are still there, but most of them fall off.
+
+Segment4:
+Topic: Seafood Preferences
+Sentence: Although it's kind of weird that, like, we're OK eating like shrimp and lobster 'cause they're essentially the same thing.
+
+Segment5:
+Topic: Dislike of Fish
+Sentence: The funny thing is he, he hates like the smell of fish.
+
+Segment6:
+Topic: Fish Enthusiast
+Sentence: Just a secret fish enthusiast.
+
+Segment7:
+Topic: Fishing Experiences
+Sentence: I do wanna go fishing at least once in my life.
+
+Segment8:
+Topic: Cruel Food Preparation
+Sentence: Just kill it first. 
+
+Segment9:
+Topic: Baking Preferences
+Sentence: I like, I like, I like decorating cakes.
+
+Segment10:
+Topic: Baking Challenges
+Sentence: My mom can be really annoying about it.
+
+Segment11:
+Topic: Cooking Experiences
+Sentence: I've gotten really into making chili eggs recently.
+
+Segment12:
+Topic: Dislike of Eggs
+Sentence: I like eggs in very specific ways, but I don't like yeah, I think I just don't like the flavor.
+
+Segment13:
+Topic: Homemade Food
+Sentence: We used to make wonton.
+
+Segment14:
+Topic: Family Cooking Dynamics
+Sentence: It's kind of like, sucky because then you feel bad, but then they make you feel bad even though it's not you.
+
+Segment15:
+Topic: Steamed Buns
+Sentence: I used to make like steamed buns.
+
+Segment16:
+Topic: Dim Sum Favorites
+Sentence: My favorite dim sum is like, you know the like, I don't know, it's called, it's like the tarot bird's nest thing.
+
+Segment17:
+Topic: Dim Sum Dishes
+Sentence: I also like the stuffed eggplant.
+
+Segment18:
+Topic: Dim Sum Preferences
+Sentence: I don't like the Asian meatballs, like the fish balls or the meatballs.
